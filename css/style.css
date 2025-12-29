@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #fffaf0; /* subtle warm background */
+    background-color: #fcfefe; /* third-color fallback */
 }
 
 a {
@@ -17,6 +17,25 @@ a {
 ul {
     list-style-type: none;
     padding-left: 0;
+}
+
+/* ================================
+   COLOR CLASSES
+================================ */
+.first-color {  
+    background: #66bfbf; 
+}
+
+.second-color { 
+    background: #eaf6f6; 
+}
+
+.third-color { 
+    background: #fcfefe; 
+}
+
+.fourth-color { 
+    background: #f76b8a; 
 }
 
 /* ================================
@@ -39,7 +58,6 @@ ul {
 ================================ */
 #hero-section {
     text-align: center;
-    background: linear-gradient(to right, #f6d365, #fda085); /* soft gradient hero */
     color: #333;
 }
 
@@ -62,19 +80,19 @@ ul {
    SPECIALTIES SECTION
 ================================ */
 .specialties-section {
-    background-color: #fff;
+    background-color: #eaf6f6; /* second-color */
 }
 
 .specialties-section h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #d2691e; /* chocolate-like color */
+    color: #66bfbf; /* first-color */
 }
 
 .specialties-article {
     margin-bottom: 40px;
-    background-color: #fff7f0;
+    background-color: #fcfefe; /* third-color */
     padding: 20px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -87,7 +105,7 @@ ul {
 }
 
 .specialties-article h3 {
-    color: #ff6347; /* vibrant orange-red headings */
+    color: #f76b8a; /* fourth-color */
     margin-bottom: 15px;
 }
 
@@ -109,14 +127,14 @@ ul {
    WHY CHOOSE US SECTION
 ================================ */
 #why-section {
-    background-color: #fff0f5; /* lavender blush */
+    background-color: #eaf6f6; /* second-color */
 }
 
 #why-section h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #c71585; /* deep pink */
+    color: #66bfbf; /* first-color */
 }
 
 #why-section ul {
@@ -136,12 +154,12 @@ ul {
     content: "✔";
     position: absolute;
     left: 0;
-    color: #ff6347;
+    color: #f76b8a; /* fourth-color */
     font-weight: bold;
 }
 
 #why-section li:hover {
-    color: #ff4500;
+    color: #f76b8a; /* fourth-color */
     transform: translateX(5px);
 }
 
@@ -150,13 +168,13 @@ ul {
 ================================ */
 #cta-section {
     text-align: center;
-    background-color: #ffe4e1; /* misty rose */
+    background-color: #66bfbf; /* first-color */
+    color: #fff;
 }
 
 #cta-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #ff4500; /* bright orange-red */
 }
 
 #cta-section p {
@@ -172,13 +190,13 @@ ul {
     font-size: 1.1rem;
     font-weight: bold;
     color: #fff;
-    background-color: #ff6347;
+    background-color: #f76b8a; /* fourth-color */
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-buttons .btn:hover {
-    background-color: #e5533c;
+    background-color: #e05575;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
@@ -190,7 +208,7 @@ footer {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #d2691e;
+    background-color: #f76b8a; /* fourth-color */
     color: #fff;
 }
 
