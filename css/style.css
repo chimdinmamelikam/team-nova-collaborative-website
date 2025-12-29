@@ -1,0 +1,178 @@
+/* ================================
+   GLOBAL STYLES
+================================ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fffaf0; /* subtle warm background */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* ================================
+   HEADER / HERO
+================================ */
+#hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #f6d365, #fda085); /* soft gradient hero */
+    color: #333;
+}
+
+#hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+/* ================================
+   SPECIALTIES SECTION
+================================ */
+.specialties-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.specialties-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #d2691e; /* chocolate-like color */
+}
+
+.specialties-article {
+    margin-bottom: 40px;
+    background-color: #fff7f0;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.specialties-article h3 {
+    color: #ff6347; /* vibrant orange-red headings */
+    margin-bottom: 15px;
+}
+
+.specialties-article ul {
+    margin-top: 10px;
+}
+
+.specialties-article li {
+    margin: 5px 0;
+}
+
+/* ================================
+   WHY CHOOSE US SECTION
+================================ */
+#why-section {
+    padding: 60px 20px;
+    background-color: #fff0f5; /* lavender blush */
+}
+
+#why-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #c71585; /* deep pink */
+}
+
+#why-section ul {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#why-section li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#why-section li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff6347;
+    font-weight: bold;
+}
+
+/* ================================
+   CALL TO ACTION SECTION
+================================ */
+#cta-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffe4e1; /* misty rose */
+}
+
+#cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff4500; /* bright orange-red */
+}
+
+#cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff6347;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #e5533c;
+    transform: translateY(-3px);
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #d2691e;
+    color: #fff;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    #hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero-section p,
+    #cta-section p {
+        font-size: 1rem;
+    }
+
+    .specialties-section h2,
+    #why-section h2,
+    #cta-section h2 {
+        font-size: 2rem;
+    }
+}
