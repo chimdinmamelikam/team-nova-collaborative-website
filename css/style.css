@@ -20,11 +20,25 @@ ul {
 }
 
 /* ================================
+   REUSABLE SECTION PADDING
+================================ */
+.section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+/* ================================
    HEADER / HERO
 ================================ */
 #hero-section {
     text-align: center;
-    padding: 80px 20px;
     background: linear-gradient(to right, #f6d365, #fda085); /* soft gradient hero */
     color: #333;
 }
@@ -40,11 +54,14 @@ ul {
     margin: 10px auto;
 }
 
+#hero-section p:first-of-type {
+    margin-top: 20px;
+}
+
 /* ================================
    SPECIALTIES SECTION
 ================================ */
 .specialties-section {
-    padding: 60px 20px;
     background-color: #fff;
 }
 
@@ -61,6 +78,12 @@ ul {
     padding: 20px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specialties-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .specialties-article h3 {
@@ -68,19 +91,24 @@ ul {
     margin-bottom: 15px;
 }
 
+.specialties-article p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
 .specialties-article ul {
-    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 .specialties-article li {
-    margin: 5px 0;
+    margin-bottom: 8px;
 }
 
 /* ================================
    WHY CHOOSE US SECTION
 ================================ */
 #why-section {
-    padding: 60px 20px;
     background-color: #fff0f5; /* lavender blush */
 }
 
@@ -94,12 +122,14 @@ ul {
 #why-section ul {
     max-width: 600px;
     margin: 0 auto;
+    padding-left: 20px;
 }
 
 #why-section li {
     margin-bottom: 12px;
-    padding-left: 20px;
     position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+    cursor: default;
 }
 
 #why-section li::before {
@@ -110,12 +140,16 @@ ul {
     font-weight: bold;
 }
 
+#why-section li:hover {
+    color: #ff4500;
+    transform: translateX(5px);
+}
+
 /* ================================
    CALL TO ACTION SECTION
 ================================ */
 #cta-section {
     text-align: center;
-    padding: 60px 20px;
     background-color: #ffe4e1; /* misty rose */
 }
 
@@ -128,23 +162,25 @@ ul {
 #cta-section p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    line-height: 1.8;
 }
 
 .cta-buttons .btn {
     display: inline-block;
-    margin: 10px;
+    margin: 10px 15px;
     padding: 15px 30px;
     font-size: 1.1rem;
     font-weight: bold;
     color: #fff;
     background-color: #ff6347;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cta-buttons .btn:hover {
     background-color: #e5533c;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* ================================
@@ -152,9 +188,15 @@ ul {
 ================================ */
 footer {
     text-align: center;
-    padding: 30px 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: #d2691e;
     color: #fff;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5;
 }
 
 /* ================================
