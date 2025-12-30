@@ -1,0 +1,354 @@
+/* ================================
+   GLOBAL STYLES
+================================ */
+/* ================================
+   NAVIGATION BAR
+================================ */
+.navbar {
+    width: 100%;
+    background-color: #66bfbf; /* first-color fallback */
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px; /* evenly space items */
+    flex-wrap: wrap; /* wrap to next line if needed */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu li a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    display: block;
+}
+
+.nav-menu li a:hover {
+    color: #f76b8a; /* fourth-color hover */
+    text-decoration: underline;
+}
+
+/* Responsive menu for mobile */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-menu li a {
+        padding: 10px 15px;
+        width: 100%;
+    }
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #d35266; /* Sweet pink/red bakery tone */
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero-btn:hover {
+  background-color: #b63e52;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+#hero-section {
+    display: flex;                  /* Makes content horizontal */
+    align-items: center;            /* Vertically center content */
+    justify-content: space-between; /* Space between text and image */
+    padding: 80px 50px;             /* Add spacing around hero */
+    gap: 40px;                      /* Space between text and image */
+    flex-wrap: wrap;                /* Allows stacking on small screens */
+}
+
+.hero-content {
+    flex: 1;                        /* Text takes up available space */
+    max-width: 550px;               /* Optional: limits width of text */
+}
+
+.hero-image {
+    flex: 1;                        /* Image takes up available space */
+    display: flex;
+    justify-content: center;        /* Centers the image in its column */
+}
+
+.hero-image img {
+    max-width: 100%;                /* Responsive image */
+    width: 450px;                   /* Adjust as needed */
+    border-radius: 15px;            /* Optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fcfefe; /* third-color fallback */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* ================================
+   COLOR CLASSES
+================================ */
+.first-color {  
+    background: #66bfbf; 
+}
+
+.second-color { 
+    background: #eaf6f6; 
+}
+
+.third-color { 
+    background: #fcfefe; 
+}
+
+.fourth-color { 
+    background: #f76b8a; 
+}
+
+/* ================================
+   REUSABLE SECTION PADDING
+================================ */
+.section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+/* ================================
+   HEADER / HERO
+================================ */
+#hero-section {
+    text-align: center;
+    color: #333;
+}
+
+#hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+#hero-section p:first-of-type {
+    margin-top: 20px;
+}
+
+/* ================================
+   SPECIALTIES SECTION
+================================ */
+.specialties-section {
+    background-color: #eaf6f6; /* second-color */
+}
+
+.specialties-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #66bfbf; /* first-color */
+}
+
+.specialties-article {
+    margin-bottom: 40px;
+    background-color: #fcfefe; /* third-color */
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specialties-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.specialties-article h3 {
+    color: #f76b8a; /* fourth-color */
+    margin-bottom: 15px;
+}
+
+.specialties-article p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.specialties-article ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.specialties-article li {
+    margin-bottom: 8px;
+}
+
+/* ================================
+   WHY CHOOSE US SECTION
+================================ */
+#why-section {
+    background-color: #eaf6f6; /* second-color */
+}
+
+#why-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #66bfbf; /* first-color */
+}
+
+#why-section ul {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+#why-section li {
+    margin-bottom: 12px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+    cursor: default;
+}
+
+#why-section li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #f76b8a; /* fourth-color */
+    font-weight: bold;
+}
+
+#why-section li:hover {
+    color: #f76b8a; /* fourth-color */
+    transform: translateX(5px);
+}
+
+/* ================================
+   CALL TO ACTION SECTION
+================================ */
+#cta-section {
+    text-align: center;
+    background-color: #66bfbf; /* first-color */
+    color: #fff;
+}
+
+#cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f76b8a; /* fourth-color */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #e05575;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f76b8a; /* fourth-color */
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    #hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero-section p,
+    #cta-section p {
+        font-size: 1rem;
+    }
+
+    .specialties-section h2,
+    #why-section h2,
+    #cta-section h2 {
+        font-size: 2rem;
+    }
+}
