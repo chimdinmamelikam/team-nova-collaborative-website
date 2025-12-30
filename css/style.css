@@ -4,9 +4,6 @@
 /* ================================
    NAVIGATION BAR
 ================================ */
-/* ================================
-   NAVIGATION BAR
-================================ */
 .navbar {
     width: 100%;
     background-color: #66bfbf; /* first-color fallback */
@@ -72,6 +69,52 @@
         padding: 10px 15px;
         width: 100%;
     }
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #d35266; /* Sweet pink/red bakery tone */
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero-btn:hover {
+  background-color: #b63e52;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+#hero-section {
+    display: flex;                  /* Makes content horizontal */
+    align-items: center;            /* Vertically center content */
+    justify-content: space-between; /* Space between text and image */
+    padding: 80px 50px;             /* Add spacing around hero */
+    gap: 40px;                      /* Space between text and image */
+    flex-wrap: wrap;                /* Allows stacking on small screens */
+}
+
+.hero-content {
+    flex: 1;                        /* Text takes up available space */
+    max-width: 550px;               /* Optional: limits width of text */
+}
+
+.hero-image {
+    flex: 1;                        /* Image takes up available space */
+    display: flex;
+    justify-content: center;        /* Centers the image in its column */
+}
+
+.hero-image img {
+    max-width: 100%;                /* Responsive image */
+    width: 450px;                   /* Adjust as needed */
+    border-radius: 15px;            /* Optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 body {
