@@ -7,7 +7,7 @@
 
 .section-header {
   text-align: center;
-  padding: 70px;
+  padding: 200px 70px 70px 70px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -100,7 +100,7 @@ p.service-description {
   padding-top: 10px;
   border-top: 3px solid #66bfbf;
   color: #fcfefe;
-  line-height: 25px;
+  line-height: 1.6;
   font-weight: 500;
 }
 
@@ -117,20 +117,22 @@ p.service-note {
 }
 
 .additional-information {
-  background: #eaf6f6;
+  background: #f76b8a;
   padding: 40px;
   text-align: center;
-  line-height: 10px;
+  line-height: 1.6;
 }
 
 h4.additional-information-title {
   font-size: 48px;
+  color: #fdfefe;
 }
 
 p.additional-information-text {
-  line-height: 25px;
+  line-height: 1.6;
   font-size: 20px;
   font-weight: 500;
+  color: #fdfefe;
 }
 
 button.additional-information-button {
@@ -148,7 +150,7 @@ button.additional-information-button {
 button.additional-information-button:hover {
   background: #66bfbf;
   border-radius: 50px;
-  border: 2px solid #f76b8a;
+  border: 2px solid #fdfefe;
   cursor: pointer;
   transform: scale(1.2);
 }
