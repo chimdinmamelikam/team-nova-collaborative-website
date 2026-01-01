@@ -1,0 +1,163 @@
+/*header styles goes here*/
+.service-container {
+  background: #eaf6f6;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section-header {
+  text-align: center;
+  padding: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/service-background.png");
+  min-height: 300px;
+  position: relative;
+  color: #fdfefe;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.section-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.section-header * {
+  position: relative;
+  z-index: 2;
+}
+
+.section-header h1 {
+  font-size: 70px;
+  display: inline-block;
+  border-bottom: 3px solid #66bfbf;
+  padding-bottom: 10px;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.section-header p strong {
+  font-size: 20px;
+  color: #eaf6f6;
+  font-weight: 400;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* signature services styles goes here */
+#signature-services .signature-services {
+  background: linear-gradient(to right,#eaf6f6,#77c6c6);
+  padding: 80px 20px;
+}
+
+.signature-services h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 48px;
+  color: #f76b8a;
+}
+
+.service-card .service-title {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #66bfbf;
+}
+
+.image-card {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 50px;
+  padding: 20px;
+}
+
+.service-card {
+  background: #f76b8a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 2000ms ease-in-out, box-shadow 0.3s ease, filter 2000ms;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
+  background: #fdfefe;
+  cursor: pointer;
+  filter: contrast(50%);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+p.service-description {
+  padding-top: 10px;
+  border-top: 3px solid #66bfbf;
+  color: #fcfefe;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.service-list li {
+  list-style-type:decimal-leading-zero;
+  text-align: left;
+  padding: 5px;
+}
+
+p.service-note {
+  color: #fcfefe;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.additional-information {
+  background: #eaf6f6;
+  padding: 40px;
+  text-align: center;
+  line-height: 10px;
+}
+
+h4.additional-information-title {
+  font-size: 48px;
+}
+
+p.additional-information-text {
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+button.additional-information-button {
+  margin: 70px;
+  padding: 20px 40px;
+  background: #f76b8a;
+  border-radius: 50px;
+  border: 2px solid #66bfbf;
+  transition: all 300ms ease-in-out;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button.additional-information-button:hover {
+  background: #66bfbf;
+  border-radius: 50px;
+  border: 2px solid #f76b8a;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+button.additional-information-button a {
+  color: #66bfbf;
+  text-decoration: none;
+}
+
+button.additional-information-button a:hover {
+  color: #f76b8a;
+}
