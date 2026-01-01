@@ -7,12 +7,12 @@
 
 .section-header {
   text-align: center;
-  padding: 200px 70px 70px 70px;
+  padding: 100px 20px 70px 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("../images/service-background.png");
-  min-height: 300px;
+  min-height: 250px;
   position: relative;
   color: #fdfefe;
   font-weight: 900;
@@ -156,7 +156,7 @@ button.additional-information-button:hover {
 }
 
 button.additional-information-button a {
-  color: #66bfbf;
+  color: #fdfefe;
   text-decoration: none;
 }
 
