@@ -1,0 +1,507 @@
+
+/* ------------------------------
+   HOME PAGE GLOBAL STYLES
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+body {
+    background: #fff7f7;
+    color: #333;
+    line-height: 1.7;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.section-padding {
+    padding: 80px 6%;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+/* ================================
+   TOP HEADER NAVIGATION
+================================*/
+.top-header {
+    width: 100%;
+    background: #c2185b; 
+    text-align: right;
+    padding: 8px 20px; /* Added horizontal padding */
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 110;
+    overflow-x: auto;   /* Prevents cut off on mobile */
+    white-space: nowrap;
+}
+
+
+.top-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.top-header li {
+    display: inline-block;
+}
+
+.top-header a {
+    color: white; /* chocolate brown */
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.top-header a:hover {
+    color: #d67b56; /* bakery peach */
+}
+
+/* Adjust body padding to account for top header */
+body {
+    padding-top: 30px; /* height of top nav */
+}
+
+/* ================================
+   MAIN NAVIGATION
+================================*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 40px; /* below top-header */
+    left: 0;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; /* logo left, menu right */
+    align-items: center;
+    padding: 18px 6%;
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #c2185b;
+    text-decoration: none;
+}
+
+/* Main menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-left: auto; /* aligns menu to the right */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: #c2185b;
+}
+
+/* Hamburger menu button */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.nav-toggle span {
+    height: 3px;
+    width: 25px;
+    background: #c2185b;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* ================================
+   HERO SECTION
+================================*/
+.alt-hero {
+    background: url('../images/hero-bakery.jpg') no-repeat center/cover;
+    padding-top: 200px; /* adjusted for top nav + main nav */
+    padding-bottom: 140px;
+    text-align: center;
+    color: #fff;
+    background-blend-mode: overlay;
+    background-color: #F65A83;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    margin: 10px 0 20px;
+    color: #ffe4eb;
+}
+
+.hero-cta {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background: #c2185b;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #c2185b;
+    border: 2px solid #c2185b;
+}
+
+.btn-secondary:hover {
+    background: #c2185b;
+    color: #fff;
+}
+
+/* ================================
+   FEATURED CAKES
+================================*/
+.featured-section h2 {
+    text-align: center;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.cake-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease-in-out;
+}
+
+.cake-card:hover {
+    transform: translateY(-8px);
+}
+
+.cake-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.cake-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cake-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #c2185b;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.cake-info {
+    padding: 15px 20px;
+}
+
+.cake-info h3 {
+    margin-bottom: 10px;
+}
+
+.cake-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #c2185b;
+}
+
+/* ================================
+   FLAVORS SECTION
+================================*/
+.flavors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.flavor-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.flavor-item h3 {
+    margin-bottom: 12px;
+}
+
+.flavor-item ul {
+    list-style: none;
+}
+
+.flavor-item ul li {
+    padding: 5px 0;
+}
+
+.flavor-note {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #c2185b;
+}
+
+/* ================================
+   TESTIMONIALS
+================================*/
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.stars {
+    color: #ffbb00;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    margin-top: 12px;
+    color: #c2185b;
+}
+
+/* ================================
+   PROCESS SECTION
+================================*/
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.step-number {
+    background: #c2185b;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ================================
+   WHY CHOOSE US
+================================*/
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.reason-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.reason-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+
+.btn-large {
+    display: inline-block;
+    background: #c2185b;
+    color: #fff;
+    padding: 15px 35px;
+    margin-top: 20px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* ================================
+   FOOTER
+================================*/
+footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #c2185b; 
+    color: #fff;
+    border-top: 2px solid #fff;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.footer-section h4 {
+    margin-bottom: 12px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #eaf6f6; 
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+/* ================================
+   RESPONSIVE
+================================*/
+@media (max-width: 768px) {
+
+    /* Top header nav stack */
+    .top-header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Main navbar stack */
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hamburger menu */
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none; /* hidden by default */
+        flex-direction: column;
+        gap: 12px;
+        margin-left: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex; /* show menu when toggled */
+    }
+
+    /* Hero section adjustments */
+    .alt-hero {
+        padding-top: 220px;
+        padding-bottom: 100px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}
