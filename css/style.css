@@ -33,7 +33,6 @@ h1, h2, h3 {
 
 /* ================================
    TOP HEADER NAVIGATION
-================================*/
 .top-header {
     width: 100%;
     background: #c2185b; 
@@ -80,7 +79,6 @@ body {
 
 /* ================================
    MAIN NAVIGATION
-================================*/
 .navbar {
     position: fixed;
     width: 100%;
@@ -144,7 +142,6 @@ body {
 
 /* ================================
    HERO SECTION
-================================*/
 .alt-hero {
     background: url('../images/hero-bakery.jpg') no-repeat center/cover;
     padding-top: 200px; /* adjusted for top nav + main nav */
@@ -202,7 +199,6 @@ body {
 
 /* ================================
    FEATURED CAKES
-================================*/
 .featured-section h2 {
     text-align: center;
 }
@@ -273,7 +269,6 @@ body {
 
 /* ================================
    FLAVORS SECTION
-================================*/
 .flavors-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -308,7 +303,6 @@ body {
 
 /* ================================
    TESTIMONIALS
-================================*/
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -336,7 +330,6 @@ body {
 
 /* ================================
    PROCESS SECTION
-================================*/
 .process-steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -365,7 +358,6 @@ body {
 
 /* ================================
    WHY CHOOSE US
-================================*/
 .reasons-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -402,7 +394,6 @@ body {
 
 /* ================================
    FOOTER
-================================*/
 footer {
     text-align: center;
     padding-top: 40px;
@@ -458,7 +449,6 @@ footer {
 
 /* ================================
    RESPONSIVE
-================================*/
 @media (max-width: 768px) {
 
     /* Top header nav stack */
@@ -504,4 +494,200 @@ footer {
     .subtitle {
         font-size: 1.2rem;
     }
+}
+
+/* ================================
+   TEAM PAGE STYLES*================= */
+   #team-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#team-page h1 {
+    text-align: center;
+    color: #66bfbf;
+}
+
+.heads {
+    color: #66bfbf;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+/* Team Members List Styling */
+#team-page ol {
+    list-style: none;
+    counter-reset: member-counter;
+    padding: 0;
+}
+
+#team-page ol li {
+    counter-increment: member-counter;
+    background: #eaf6f6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding-left: 60px; /* Space for custom numbering */
+}
+
+#team-page ol li::before {
+    content: counter(member-counter) ". ";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f76b8a;
+}
+
+#team-page ol li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#team-page ol li h3 {
+    color: #66bfbf;
+    margin-bottom: 10px;
+}
+
+#team-page ol li p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Collaboration Section */
+#team-page #rules {
+    background: #eaf6f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#team-page #rules li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#team-page #rules li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #f76b8a;
+    font-weight: bold;
+}
+
+/* Responsive for Team Page */
+@media (max-width: 768px) {
+    #team-page {
+        padding: 20px 10px;
+        margin: 10px;
+    }
+    #team-page ol li {
+        padding: 15px;
+        padding-left: 50px;
+    }
+    #team-page ol li::before {
+        font-size: 1.2rem;
+        left: 15px;
+    }
+}
+
+/* ================================
+   CONTACT PAGE STYLES
+#contact-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-heading {
+    color: #66bfbf;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-info, .contact-form {
+    color: #66bfbf;
+    font-size: 1.5em;
+    margin-top: 30px;
+    
+}
+
+.contact-info, .contact-info + ul {
+    background: #eaf6f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.contact-info + ul {
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #66bfbf;
+    color: #fcfefe;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
 }
