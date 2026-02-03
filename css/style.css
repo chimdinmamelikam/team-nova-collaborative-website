@@ -33,7 +33,6 @@ h1, h2, h3 {
 
 /* ================================
    TOP HEADER NAVIGATION
-================================*/
 .top-header {
     width: 100%;
     background: #c2185b; 
@@ -80,7 +79,6 @@ body {
 
 /* ================================
    MAIN NAVIGATION
-================================*/
 .navbar {
     position: fixed;
     width: 100%;
@@ -144,7 +142,6 @@ body {
 
 /* ================================
    HERO SECTION
-================================*/
 .alt-hero {
     background: url('../images/hero-bakery.jpg') no-repeat center/cover;
     padding-top: 200px; /* adjusted for top nav + main nav */
@@ -202,7 +199,6 @@ body {
 
 /* ================================
    FEATURED CAKES
-================================*/
 .featured-section h2 {
     text-align: center;
 }
@@ -273,7 +269,6 @@ body {
 
 /* ================================
    FLAVORS SECTION
-================================*/
 .flavors-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -308,7 +303,6 @@ body {
 
 /* ================================
    TESTIMONIALS
-================================*/
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -336,7 +330,6 @@ body {
 
 /* ================================
    PROCESS SECTION
-================================*/
 .process-steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -365,7 +358,6 @@ body {
 
 /* ================================
    WHY CHOOSE US
-================================*/
 .reasons-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -402,7 +394,6 @@ body {
 
 /* ================================
    FOOTER
-================================*/
 footer {
     text-align: center;
     padding-top: 40px;
@@ -458,7 +449,6 @@ footer {
 
 /* ================================
    RESPONSIVE
-================================*/
 @media (max-width: 768px) {
 
     /* Top header nav stack */
