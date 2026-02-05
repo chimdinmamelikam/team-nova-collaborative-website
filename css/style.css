@@ -1,12 +1,12 @@
 
 /* ------------------------------
    HOME PAGE GLOBAL STYLES
--------------------------------- */ 
-/*navbar styles goes here*/
-.brand-logo {
-  color: #C3185B;
-  letter-spacing: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+--------------------------------*/
+#comtact-team {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 ul.navbar-nav {
@@ -15,17 +15,7 @@ ul.navbar-nav {
   padding-top: 16px;
 }
 
-ul.navbar-nav a {
-  color: #C3185B;
-  font-size:clamp(14px, 1.5vw, 18px);
-  font-weight: 600;
-}
-
-ul.navbar-nav a:hover {
-    color: #64BFBE;
-}
-
-body#home-section {
+body {
     background: #fff7f7;
     color: #333;
     line-height: 1.7;
@@ -50,69 +40,75 @@ h1, h2, h3 {
 }
 
 /* ================================
-   MAIN NAVIGATION*/ 
-nav.home-subnav {
-    position: fixed;
-    top: 80px;
+   TOP HEADER NAVIGATION
+================================*/
+.top-header {
     width: 100%;
+    background: #c2185b; 
+    text-align: right;
+    padding: 8px 20px; /* Added horizontal padding */
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
     left: 0;
-    z-index: 100;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    z-index: 110;
+    overflow-x: auto;   /* Prevents cut off on mobile */
+    white-space: nowrap;
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    
-    justify-content: space-between; 
-    align-items: center;
-    padding: 18px 6%;
-}
 
-.nav-logo {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #c2185b;
-    text-decoration: none;
-}
-
-/* Main menu */ 
-.nav-menu {
+.top-header ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 25px;
-    margin-left: 0 
+    justify-content: right;
+    gap: 10px;
 }
 
-.nav-menu a {
-    padding-top: 20px;
+.top-header li {
+    display: inline-block;
+}
+
+.top-header a {
+    color: white; /* chocolate brown */
     text-decoration: none;
-    color: #333;
     font-weight: 500;
     transition: 0.3s ease-in-out;
 }
 
-.nav-menu a:hover {
-    color: #c2185b;
-    
+.top-header a:hover {
+    color: #d67b56; /* bakery peach */
 }
 
-/* Hamburger menu button */ 
-.nav-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 4px;
+/* Adjust body padding to account for top header */
+body {
+    padding-top: 30px; /* height of top nav */
 }
 
-.nav-toggle span {
-    height: 3px;
-    width: 25px;
-    background: #c2185b;
-    border-radius: 2px;
-    transition: 0.3s;
+/* ================================
+   MAIN NAVIGATION
+================================*/
+.brand-logo {
+  color: #C3185B;
+  letter-spacing: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul.navbar-nav {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 16px;
+}
+
+ul.navbar-nav a {
+  color: #C3185B;
+  font-size:clamp(16px, 3vw, 20px);
+  font-weight: 500;
+}
+
+ul.navbar-nav a:hover {
+    color: #64BFBE;
 }
 
 /* ================================
