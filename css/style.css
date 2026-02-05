@@ -1,0 +1,22 @@
+/*navbar styles goes here*/
+.brand-logo {
+  color: #C3185B;
+  letter-spacing: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul.navbar-nav {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 16px;
+}
+
+ul.navbar-nav a {
+  color: #C3185B;
+  font-size:clamp(16px, 3vw, 20px);
+  font-weight: 600;
+}
+
+ul.navbar-nav a:hover {
+    color: #64BFBE;
+}
