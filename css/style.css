@@ -2,13 +2,12 @@
 /* ------------------------------
    HOME PAGE GLOBAL STYLES
 --------------------------------*/
-* {
+#comtact-team {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
 
 
 body {
@@ -81,65 +80,26 @@ body {
 /* ================================
    MAIN NAVIGATION
 ================================*/
-.navbar {
-    position: fixed;
-    width: 100%;
-    top: 40px; /* below top-header */
-    left: 0;
-    z-index: 100;
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+.brand-logo {
+  color: #C3185B;
+  letter-spacing: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between; /* logo left, menu right */
-    align-items: center;
-    padding: 18px 6%;
+ul.navbar-nav {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 16px;
 }
 
-.nav-logo {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #c2185b;
-    text-decoration: none;
+ul.navbar-nav a {
+  color: #C3185B;
+  font-size:clamp(16px, 3vw, 20px);
+  font-weight: 500;
 }
 
-/* Main menu */
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin-left: auto; /* aligns menu to the right */
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: 0.3s ease-in-out;
-}
-
-.nav-menu a:hover {
-    color: #c2185b;
-}
-
-/* Hamburger menu button */
-.nav-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 4px;
-}
-
-.nav-toggle span {
-    height: 3px;
-    width: 25px;
-    background: #c2185b;
-    border-radius: 2px;
-    transition: 0.3s;
+ul.navbar-nav a:hover {
+    color: #64BFBE;
 }
 
 /* ================================
