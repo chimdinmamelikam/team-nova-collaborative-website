@@ -205,15 +205,15 @@ div.card-body .card-title {
   color: #F6698B;
 }
 
+div.card-body p.text-accent {
+  color: #64BFBE;
+  font-size: clamp(12px, 1.5vw, 14px);
+}
+
 div.card-body p.card-text {
   font-size: clamp(14px, 1.8vw, 16px);
 }
 
-/* Accent text sryle goes here*/
-div.card-body p.text-accent {
-  color: #F6698B;
-  font-size: clamp(12px, 1.5vw, 14px);
-}
 
 /* Feature list style goes here*/
 div.card-body ul.feature-list li {
@@ -301,6 +301,10 @@ div.timeline-row div.step-circle.another {
 section.testimonials-section {
   background: #E7F7F7;
   margin: 30px;
+}
+
+div h2.testimonial-title {
+    color: #F6698B;
 }
 
 div.testimonial-card {
