@@ -24,7 +24,7 @@ ul.navbar-nav {
 
 ul.navbar-nav a {
   color: #C3185B;
-  font-size:clamp(16px, 3vw, 20px);
+  font-size:clamp(14px, 3vw, 16px);
   font-weight: 600;
 }
 
@@ -300,7 +300,6 @@ div.timeline-row div.step-circle.another {
 /*Testimonials section style goes here*/
 section.testimonials-section {
   background: #E7F7F7;
-  margin: 30px;
 }
 
 div h2.testimonial-title {
@@ -308,8 +307,8 @@ div h2.testimonial-title {
 }
 
 div.testimonial-card {
+  border-left: 2px solid #F6698B;
   border-radius: 16px;
-  border: none;
   padding: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.8);
   transition: transform 300ms ease;
@@ -373,9 +372,10 @@ div a.place-order {
   border-radius: 30px;
   transition: all 300ms ease-in-out;
   background: #E7F7F7;
-  padding: 20px 48px;
+  padding: 18px 48px;
   font-weight: 600;
   font-size: 16px;
+  color: #F6698B;
 }
 
 div a.place-order:hover {
@@ -383,29 +383,31 @@ div a.place-order:hover {
   cursor: pointer;
   color: #E7F7F7;
   font-weight: 600;
+  transform: translateY(-5%);
 }
 
 div a.contact {
   border: 2px solid #E7F7F7;
   border-radius: 30px;
-  padding: 20px 28px;
+  padding: 18px 28px;
   font-weight: 600;
   font-size: 16px;
   transition: all 300ms ease-in-out;
+  color: #E7F7F7;
 }
 
 div a.contact:hover {
-  color: #E7F7F7;
-  border: 2px solid #E7F7F7;
+  color: #F6698B;
+  border: 2px solid ;
   cursor: pointer;
   font-weight: 600;
+  transform: translateY(-5%);
 }
 
 div a.place-order i,
 div a.contact i {
   font-size: 1.3rem;
 }
-
 
 @media (max-width: 767px) {
   .timeline-row::before {
