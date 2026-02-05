@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Sweetcrumbs cake & pasteries</title>
+    <title>About – Sweetcrumbs Cakes</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     
 <header>
@@ -23,4 +25,95 @@
     <li>Affordability : Great taste should be accessible to every one</li>
 </ul>
 </>
+</html>
+
+    <!-- Top Header -->
+    <div class="top-header">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Sweetcrumbs</a>
+
+            <div class="nav-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section id="about-page" class="section-padding">
+        <h1>About Sweetcrumbs Cake & Pastries</h1>
+        
+        <p class="about-intro">
+            Sweetcrumbs is a small but passionate cake and pastry business dedicated to bringing joy 
+            through beautifully baked treats. What started as a home-kitchen hobby has grown into a 
+            trusted brand known for quality, creativity, and unforgettable flavors.
+        </p>
+
+        <div class="about-mission">
+            <h2>Our Mission</h2>
+            <p>
+                To make every celebration sweet, memorable, and full of flavor — one cake at a time.
+            </p>
+        </div>
+
+        <div class="about-values">
+            <h2>What We Stand For</h2>
+
+            <div class="value-grid">
+
+                <div class="value-card">
+                    <h3>Quality</h3>
+                    <p>We use only the freshest ingredients in every bake.</p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Creativity</h3>
+                    <p>Every treat is custom-designed with attention to detail.</p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Customer Care</h3>
+                    <p>We listen, we create, and we deliver with love.</p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Affordability</h3>
+                    <p>Great taste should be accessible to everyone.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        // Mobile Menu Toggle
+        const toggle = document.getElementById("mobile-menu");
+        const menu = document.getElementById("nav-links");
+
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+
+</body>
 </html>
