@@ -1,5 +1,7 @@
 🍰 SweetCrumbs Cakes & Pastries
+
 A Collaborative Frontend Project by Team Nova
+
 
 SweetCrumbs Cakes & Pastries is a fully responsive and visually appealing website created by Team Nova, a group of five passionate learners working together to simulate real-world collaboration and build a clean, functional, and portfolio-ready project.
 
