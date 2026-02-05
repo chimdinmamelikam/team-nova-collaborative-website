@@ -1,20 +1,15 @@
 
 /* ------------------------------
    HOME PAGE GLOBAL STYLES
---------------------------------*/
-* {
+-------------------------------- */ 
+body.home-section {
+    background: #fff7f7;
+    color: #333;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-}
-
-
-
-body {
-    background: #fff7f7;
-    color: #333;
-    line-height: 1.7;
 }
 
 img {
@@ -31,58 +26,18 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
-/* ================================
-   TOP HEADER NAVIGATION
-.top-header {
-    width: 100%;
-    background: #c2185b; 
-    text-align: right;
-    padding: 8px 20px; /* Added horizontal padding */
-    border-bottom: 1px solid #eee;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 110;
-    overflow-x: auto;   /* Prevents cut off on mobile */
-    white-space: nowrap;
-}
-
-
-.top-header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: right;
-    gap: 10px;
-}
-
-.top-header li {
-    display: inline-block;
-}
-
-.top-header a {
-    color: white; /* chocolate brown */
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s ease-in-out;
-}
-
-.top-header a:hover {
-    color: #d67b56; /* bakery peach */
-}
 
 /* Adjust body padding to account for top header */
-body {
-    padding-top: 30px; /* height of top nav */
+body.home-section {
+    padding-top: 90px; /* height of top nav */
 }
 
 /* ================================
-   MAIN NAVIGATION
-.navbar {
+   MAIN NAVIGATION*/ 
+.home-sunnav {
     position: fixed;
+    top: 30px;
     width: 100%;
-    top: 40px; /* below top-header */
     left: 0;
     z-index: 100;
     background: #fff;
@@ -91,9 +46,10 @@ body {
 
 .nav-container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* logo left, menu right */
+    
+    justify-content: space-between; 
     align-items: center;
     padding: 18px 6%;
 }
@@ -105,15 +61,16 @@ body {
     text-decoration: none;
 }
 
-/* Main menu */
+/* Main menu */ 
 .nav-menu {
     list-style: none;
     display: flex;
     gap: 25px;
-    margin-left: auto; /* aligns menu to the right */
+    margin-left: 0 
 }
 
 .nav-menu a {
+    padding-top: 20px;
     text-decoration: none;
     color: #333;
     font-weight: 500;
@@ -124,7 +81,7 @@ body {
     color: #c2185b;
 }
 
-/* Hamburger menu button */
+/* Hamburger menu button */ 
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -141,11 +98,11 @@ body {
 }
 
 /* ================================
-   HERO SECTION
+   HERO SECTION*/ 
 .alt-hero {
-    background: url('../images/hero-bakery.jpg') no-repeat center/cover;
-    padding-top: 200px; /* adjusted for top nav + main nav */
-    padding-bottom: 140px;
+    background: url('../images/hero-bakery.jpg') no-repeat center/cover; /* adjusted for top nav + main nav */ 
+    padding-bottom: 120px;
+    padding-top: 140px;
     text-align: center;
     color: #fff;
     background-blend-mode: overlay;
@@ -169,36 +126,38 @@ body {
     gap: 18px;
 }
 
-.btn {
-    padding: 12px 25px;
+body.home-section .browse-btn {
+    background: #c2185b;
+    color: #fff;
+     padding: 12px 25px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s ease-in-out;
 }
 
-.btn-primary {
-    background: #c2185b;
-    color: #fff;
-}
-
-.btn-primary:hover {
+body.home-section .browse-btn:hover {
     opacity: 0.85;
 }
 
-.btn-secondary {
+body.home-section .explore-btn {
     background: #fff;
     color: #c2185b;
     border: 2px solid #c2185b;
+     padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
 }
 
-.btn-secondary:hover {
+body.home-section .explore-btn:hover {
     background: #c2185b;
     color: #fff;
 }
 
 /* ================================
-   FEATURED CAKES
+   FEATURED CAKES */ 
 .featured-section h2 {
     text-align: center;
 }
@@ -268,7 +227,7 @@ body {
 }
 
 /* ================================
-   FLAVORS SECTION
+   FLAVORS SECTION */ 
 .flavors-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -302,7 +261,7 @@ body {
 }
 
 /* ================================
-   TESTIMONIALS
+   TESTIMONIALS */ 
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -329,7 +288,7 @@ body {
 }
 
 /* ================================
-   PROCESS SECTION
+   PROCESS SECTION */ 
 .process-steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -357,7 +316,7 @@ body {
 }
 
 /* ================================
-   WHY CHOOSE US
+   WHY CHOOSE US */ 
 .reasons-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -393,7 +352,7 @@ body {
 }
 
 /* ================================
-   FOOTER
+   FOOTER */ 
 footer {
     text-align: center;
     padding-top: 40px;
@@ -448,42 +407,44 @@ footer {
 }
 
 /* ================================
-   RESPONSIVE
+   RESPONSIVE */ 
 @media (max-width: 768px) {
 
-    /* Top header nav stack */
-    .top-header ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+    /* Main navbar stack */ 
+    body.home-section {
+    padding-top: 50px; 
+  }
 
-    /* Main navbar stack */
+  .home-subnav {
+    top: 64px;
+  }
+
     .nav-container {
         flex-direction: column;
         gap: 10px;
     }
 
-    /* Hamburger menu */
+    /* Hamburger menu */ 
     .nav-toggle {
         display: flex;
     }
 
     .nav-menu {
-        display: none; /* hidden by default */
-        flex-direction: column;
+        justify-content: center;
         gap: 12px;
         margin-left: 0;
         align-items: center;
         width: 100%;
+        flex-wrap: wrap;
     }
 
     .nav-menu.active {
-        display: flex; /* show menu when toggled */
+        display: flex; /* show menu when toggled */ 
     }
 
-    /* Hero section adjustments */
+    /* Hero section adjustments */ 
     .alt-hero {
-        padding-top: 220px;
+        padding-top: 120px;
         padding-bottom: 100px;
     }
 
@@ -494,4 +455,423 @@ footer {
     .subtitle {
         font-size: 1.2rem;
     }
+}
+
+
+/*==========================================
+SERVICES SECTION STYLES GOES HERE*/ 
+section.service-container {
+  padding: 0;
+  margin: 0;
+  background: #FFF7F7;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*navbar styles goes here*/
+.navbar .navbar-brand {
+  color: #C3185B;
+  letter-spacing: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul.navbar-nav {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 16px;
+}
+
+ul.navbar-nav a {
+  color: #C3185B;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+ul.navbar-nav a:hover {
+    color: #66bfbf;
+}
+
+
+/*header styles goes here*/
+header.section-header {
+  text-align: center;
+  padding: 100px 20px 70px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/service-background.png");
+  position: relative;
+  color: #ffffff;
+}
+
+header.section-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+header.section-header * {
+  position: relative;
+  z-index: 2;
+}
+
+div p.header-paragraph {
+  background: #f76b8a;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+h1.services-title {
+  font-size: clamp(32px, 6vw, 70px);
+  font-weight: 800;
+  padding-bottom: 15px;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+h1.services-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40%;
+  height: 4px;
+  background: linear-gradient(
+  to right,
+  #66bfbf 0%,
+  #f76b8a 45%,
+  #66bfbf 100%);
+  transform: translateX(-50%);
+}
+
+p.services-tagline {
+  font-size: clamp(14px, 2vw, 18px);
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #E7F7F7;
+}
+
+p.services-tagline strong {
+  font-size: 25px;
+  color: #E7F7F7;
+  font-weight: 600;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+div.stats-row {
+  margin-top: 20px;
+}
+
+div p.statistics {
+  font-size: clamp(12px, 1.5vw, 16px);
+  color: #ffffff;
+}
+
+div p.statistics strong {
+  font-size: clamp(18px, 3vw, 25px);
+  font-weight: 700;
+  color: #f76b8a;
+}
+
+
+/* signature services styles goes here */
+section#signature-services {
+  padding: 70px 20px;
+  background: #E7F7F7;
+}
+
+h2.services-subtitle {
+    font-size: clamp(16px, 6vw, 46px);
+    color: #f76b8a;
+}
+
+p.services-subtitle {
+    color: #E7F7F7;
+}
+
+div.custom-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 500ms ease-in-out;
+}
+
+div.custom-card:hover {
+  border: 3px solid #f76b8a;
+  transform: translateY(-2%);
+}
+
+/*image styling*/
+div.custom-card .image-wrapper {
+  position: relative;
+}
+
+div.custom-card .image-wrapper img {
+  height: 230px;
+  object-fit: cover;
+}
+
+/* Badge */
+div.image-wrapper span.popular-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #f76b8a;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: #FFFFFF;
+}
+
+/* Icon circle */
+div.image-wrapper .icon-circle {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 42px;
+  height: 42px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f76b8a;
+  font-size: 1.2rem;
+}
+
+/* Price */
+div.image-wrapper .price {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #FFFFFF;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  color: #f76b8a;
+  font-weight: 600;
+}
+
+/* Card title and text */
+div.card-body .card-title {
+  font-size: clamp(18px, 2vw, 22px);
+  color: #C3185B;
+}
+
+div.card-body p.card-text {
+  font-size: clamp(14px, 1.8vw, 16px);
+}
+
+/* Accent text sryle goes here*/
+div.card-body p.text-accent {
+  color: #64BFBE;
+  font-size: clamp(12px, 1.5vw, 14px);
+}
+
+/* Feature list style goes here*/
+div.card-body ul.feature-list li {
+  font-size: clamp(12px, 1.5vw, 14px);
+  margin-bottom: 6px;
+  color: #F6698B;
+}
+
+div.card-body ul.feature-list i {
+  color: #64BFBE;
+  margin-right: 6px;
+}
+
+/* Turnaround Style Goes Here */
+div.card-body p.turnaround {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* Card Button Style Goes Here */
+div.card-footer-clean {
+  background: transparent;
+  border: none;
+}
+
+div button.btn-pink {
+  background: linear-gradient(
+  to right,
+  #66bfbf 0%,
+  #F6698B 45%,
+  #66bfbf 100%);
+  color: #FFFFFF;
+  border-radius: 30px;
+  padding: 10px;
+  transition: all 500ms ease-in-out;
+}
+
+div button.btn-pink:hover {
+  color: #ffffff;
+  border: 2px solid #F6698B;
+}
+
+/*How it works styling goes here*/
+section.how-it-works {
+  background: #FFFFFF;
+}
+
+/* Timeline line */
+section.how-it-works div.timeline-row::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(
+  to right,
+  #66bfbf 0%,
+  #F6698B 45%,
+  #66bfbf 100%);
+  z-index: 0;
+}
+
+/* Step circle */
+div.timeline-row div.step-circle {
+  width: clamp(40px, 10vw, 60px);
+  height: clamp(40px, 10vw, 60px);
+  margin: 0 auto;
+  background: #F6698B;
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: clamp(14px, 3vw, 19px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+div.timeline-row div.step-circle.another {
+    background: #66bfbf;
+}
+
+
+/*Testimonials section style goes here*/
+section.testimonials-section {
+  background: #FFF7F7;
+  margin: 30px;
+}
+
+div.testimonial-card {
+  border-radius: 16px;
+  border: none;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 300ms ease;
+}
+
+div.testimonial-card:hover {
+  transform: translateY(-6px);
+}
+
+div.card-body .stars {
+  text-align: left;
+}
+
+div.card-body .stars i {
+  font-size: 1.3rem;
+}
+
+div.testimonial-card p.testimonial-text {
+  font-size: clamp(14px, 1.8vw, 16px);
+  opacity: 0.7;
+  line-height: 1.6;
+  text-align: left;
+  font-style: italic;
+}
+
+div.testimonial-card p.testimonial-name {
+  color: #C3185B;;
+  font-weight: 500;
+  text-align: left;
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+/*additional information section styling goes here */
+section.additional-information {
+  background: linear-gradient(
+  to right,
+  #66bfbf 0%,
+  #F6698B 45%,
+  #66bfbf 100%);
+}
+
+div h4.additional-information-title {
+  font-size: clamp(24px, 5vw, 35px);
+  font-weight: 500;
+  color: #ffffff;
+}
+
+div p.additional-information-text {
+  font-size: clamp(16px, 2.5vw, 18px);
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.6;
+  padding-top: 20px;
+}
+
+div a.place-order {
+  border: none;
+  border-radius: 30px;
+  transition: all 300ms ease-in-out;
+  background: #E7F7F7;
+  padding: 20px 48px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #F6698B;
+}
+
+div a.place-order:hover {
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+div a.contact {
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  padding: 20px 28px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 300ms ease-in-out;
+}
+
+div a.contact:hover {
+  color: #F6698B;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+div a.place-order i,
+div a.contact i {
+  font-size: 1.3rem;
+}
+
+
+@media (max-width: 767px) {
+  .timeline-row::before {
+    display: none;
+  }
+
+  h1.services-title::after {
+    width: 60%;
+  }
 }
