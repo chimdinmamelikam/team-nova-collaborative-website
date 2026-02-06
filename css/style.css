@@ -1088,7 +1088,7 @@ div.testimonial-card {
   border-left: 2px solid #F6698B;
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
   transition: transform 300ms ease;
 }
 

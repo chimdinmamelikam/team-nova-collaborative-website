@@ -41,10 +41,9 @@ Git Repo -
 - Git & GitHub
 
 ## Team Roles
-👥 Team Members & Roles
-👩‍💻 Chimdinma Lois Melikam – Team Lead & Homepage Developer
+👩‍💻 **Chimdinma Lois Melikam – Team Lead & Homepage Developer**
 
-Chimdinma leads the planning, organization, and overall coordination of the project.
+Chimdinma leads the planning, organization and overall coordination of the project.
 She:
 
 Oversees folder structure and code organization
@@ -57,7 +56,7 @@ Guides the team through Git branching, PR creation, and merging workflows
 
 Developed the Homepage
 
-🌟 Mubarokah Sijuwola – About Page Developer
+🌟 **Mubarokah Sijuwola – About Page Developer**
 
 Mubarokah crafted the About Page, ensuring a clear and compelling brand story.
 She focuses on:
@@ -68,7 +67,7 @@ UI consistency
 
 Styling alignment across the project
 
-🍰 Sandra Chinwe Asike – Services Page Developer
+🍰 **Sandra Chinwe Asike – Services Page Developer**
 
 Sandra designed and developed the Services Page, presenting business offerings in a clean, visually appealing layout.
 Her contributions include:
@@ -79,7 +78,7 @@ UI spacing and layout balance
 
 Smooth hover and interaction effects
 
-💼 Precious Ado – Team Page & Contact Page Developer
+💼 **Precious Ado – Team Page & Contact Page Developer**
 
 Precious built both the Team Page and Contact Page, ensuring:
 
@@ -91,34 +90,36 @@ Consistency in styling and responsiveness
 
 Valuable PR reviews and collaboration effort
 
+
 ## Our Collaboration Workflow
 Team Nova followed a real-world development workflow using Git and GitHub:
 
-Each member works on their own branch
+-Each member works on their own branch
 
-Pull Requests (PRs) are reviewed before merging
+-Pull Requests (PRs) are reviewed before merging
 
-No direct pushes to the main branch
+-No direct pushes to the main branch
 
-Everyone contributes to commit history and documentation
+-Everyone contributes to commit history and documentation
 
-Merge conflicts are resolved together as part of the learning process
+-Merge conflicts are resolved together as part of the learning process
 
-This workflow strengthened our practical experience in teamwork, communication, and professional frontend development.
+-This workflow strengthened our practical experience in teamwork, communication, and professional frontend development.
 
+## What We Learnt
+Before this project, it was assumed that using the terminal and Git for version control would make collaboration seamless. However, the project highlighted that successful collaboration requires **patience, clear communication, and careful planning**.
 
+Key takeaways from the project include:
 
+-The importance of using **classes and IDs** properly in HTML and CSS to avoid conflicts
 
-## ASIKE SANDRA - What I Learned
-Before this project, I assumed that working on my terminal and using Git for version control would make collaboration seamless. However, this project taught me that successful collaboration requires **patience, clear communication, and careful planning**.  
+-Careful planning of CSS selectors across developers helps prevent merge conflicts
 
-Key takeaways include:  
-- The importance of using **classes and IDs** properly in HTML and CSS to avoid conflicts  
-- Planning CSS selectors carefully across developers prevents merge conflicts  
-- Bootstrap is a powerful tool that simplifies styling challenges  
-- True teamwork is about coordinating changes and respecting each developer's workflow  
+-Bootstrap is an effective tool that simplifies styling challenges
 
-This project reinforced that collaboration is not just about coding—it’s about strategy, foresight, and coordination.
+-Effective teamwork involves coordinating changes and respecting each developer's workflow
+
+-Overall, the project demonstrated that collaboration is not just about coding—it also involves strategy, foresight, and coordination.
 
 
 
