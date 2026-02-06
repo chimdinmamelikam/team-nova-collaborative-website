@@ -1,14 +1,3 @@
-
-/*==========================================
-SERVICES SECTION STYLING GOES HERE*/ 
-
-section.service-container {
-  padding: 0;
-  margin: 0;
-  background: #FFFFFF;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 /*navbar styles goes here*/
 .brand-logo {
   color: #C3185B;
@@ -32,16 +21,800 @@ ul.navbar-nav a:hover {
     color: #64BFBE;
 }
 
+
+/* ------------------------------
+   HOME PAGE GLOBAL STYLES
+-------------------------------- */ 
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body#home-section {
+    background: #fff7f7;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+    padding-top: 109px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.section-padding {
+    padding: 80px 6%;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+/* ================================
+   MAIN NAVIGATION*/ 
+nav.home-subnav {
+    position: fixed;
+    padding-top: 0;
+    height: 70px;
+    top:clamp(50px, 7vw, 100px);
+    width: 100%;
+    left: 0;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+}
+
+ul.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    padding-top: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size:clamp(10px, 1.5vw, 22px);
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: #c2185b;
+    
+}
+
+/* ================================
+   HERO SECTION*/ 
+.alt-hero {
+    background: url('../images/hero-bakery.jpg') no-repeat center/cover; /* adjusted for top nav + main nav */ 
+    padding-bottom: 120px;
+    padding-top: 140px;
+    text-align: center;
+    color: #fff;
+    background-blend-mode: overlay;
+    background-color: #F65A83;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    margin: 10px 0 20px;
+    color: #ffe4eb;
+}
+
+.hero-cta {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+body#home-section .browse-btn {
+    background: #c2185b;
+    color: #fff;
+     padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+body#home-section .browse-btn:hover {
+    opacity: 0.85;
+}
+
+body#home-section .explore-btn {
+    background: #fff;
+    color: #c2185b;
+    border: 2px solid #c2185b;
+     padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+body#home-section .explore-btn:hover {
+    background: #c2185b;
+    color: #fff;
+}
+
+/* ================================
+   FEATURED CAKES */ 
+.featured-section h2 {
+    text-align: center;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.cake-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease-in-out;
+}
+
+.cake-card:hover {
+    transform: translateY(-8px);
+}
+
+.cake-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.cake-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cake-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #c2185b;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.cake-info {
+    padding: 15px 20px;
+}
+
+.cake-info h3 {
+    margin-bottom: 10px;
+}
+
+.cake-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #c2185b;
+}
+
+/* ================================
+   FLAVORS SECTION */ 
+.flavors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.flavor-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.flavor-item h3 {
+    margin-bottom: 12px;
+}
+
+.flavor-item ul {
+    list-style: none;
+}
+
+.flavor-item ul li {
+    padding: 5px 0;
+}
+
+.flavor-note {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #c2185b;
+}
+
+/* ================================
+   TESTIMONIALS */ 
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.stars {
+    color: #ffbb00;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    margin-top: 12px;
+    color: #c2185b;
+}
+
+/* ================================
+   PROCESS SECTION */ 
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.step-number {
+    background: #c2185b;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ================================
+   WHY CHOOSE US */ 
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.reason-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.reason-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+
+.btn-large {
+    display: inline-block;
+    background: #c2185b;
+    color: #fff;
+    padding: 15px 35px;
+    margin-top: 20px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* ================================
+   FOOTER */ 
+footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #c2185b; 
+    color: #fff;
+    border-top: 2px solid #fff;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.footer-section h4 {
+    margin-bottom: 12px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #eaf6f6; 
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+/* ================================
+   RESPONSIVE */ 
+@media (max-width: 768px) {
+    /* Main navbar stack */ 
+    body#home-section {
+    padding-top: 20px; 
+  }
+
+   nav.home-subnav {
+    top: 60px;
+  }
+
+    /* Hero section adjustments */ 
+    .alt-hero {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+}
+
+/* ================================
+   TEAM PAGE STYLES
+================================= */
+   section#team-page {
+    max-width: 900px;
+    margin: 80px auto 40px;
+    padding: 20px;
+}
+
+
+#team-page h1 {
+    text-align: center;
+    color: #66bfbf;
+    padding: 0 0 20px;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    position: relative;
+}
+
+#team-page h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(
+  to right,
+  #64BFBE 0%,
+  #F6698B 45%,
+  #64BFBE 100%);
+  transform: translateX(-50%);
+  }
+
+.heads {
+    color: #66bfbf;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin: 50px 0 20px;
+    position: relative;
+    
+}
+
+p.heads-paragraph {
+    text-align: justify;
+    max-width: 720px;
+    margin: 0 auto 20px;
+    line-height: 1.8;
+    color: #444;
+    font-size:clamp(14px, 1.8vw, 16px);
+}
+
+p.heads-paragraph.two {
+    text-align: center;
+}
+/* Team Members List Styling */
+
+#team-page ol {
+    list-style: none;
+    counter-reset: member-counter;
+    padding: 0;
+}
+
+
+#team-page ol li {
+    counter-increment: member-counter;
+    background: #eaf6f6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    border-left: #C2185B solid 4px;
+    padding-left: 60px; /* Space for custom numbering */
+}
+
+
+#team-page ol li::before {
+    content: counter(member-counter) ". ";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f65a83;
+}
+
+
+#team-page ol li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+#team-page ol li h3 {
+    color: #66bfbf;
+    margin-bottom: 10px;
+}
+
+
+#team-page ol li p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* Collaboration Section */
+#team-page #rules {
+    background: #eaf6f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+#team-page #rules li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+
+#team-page #rules li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #f65a83;
+    font-weight: bold;
+}
+
+
+/* Responsive for Team Page */
+@media (max-width: 768px) {
+    #team-page {
+        padding: 20px 10px;
+        margin: 10px;
+    }
+
+    #team-page ol li {
+        padding: 15px;
+        padding-left: 50px;
+    }
+
+    #team-page ol li::before {
+        font-size: 1.2rem;
+        left: 15px;
+    }
+}
+
+
+/* ================================
+   CONTACT PAGE STYLES
+================================= */
+
+#contact-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 120px 20px 60px 20px;
+    text-align: center;
+}
+
+
+.contact-heading {
+    color: #66bfbf;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
+.contact-info, .contact-form {
+    color: #66bfbf;
+    font-size: 1.5em;
+    margin-top: 30px;
+   
+}
+
+
+.contact-info, .contact-info + ul {
+    background: #eaf6f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.contact-info {
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.contact-info + ul {
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+li {
+    margin: 10px 0;
+}
+
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form-group {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #66bfbf;
+    color: #fcfefe;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #C2185B;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #contact-page {
+    padding: 80px 20px 20px 20px;
+}
+}
+
+
+/* ================================
+   ABOUT PAGE STYLES
+================================ */
+#about-page {
+    margin-top: 100px;
+    padding-bottom: 60px;
+}
+
+#about-page header h1 {
+    text-align: center;
+    color: #f65a83;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.about-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.about-mission {
+    background: linear-gradient(135deg, #66bfbf, #f65a83);;
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about-mission h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.about-mission p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.about-values h2 {
+  text-align: center;
+  color: #f65a83;
+  margin-bottom: 35px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.value-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+    border-top: 4px solid #f65a83;
+transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.value-card h3 {
+    color: #66bfbf;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.value-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #about-page {
+        padding: 40px 20px;
+    }
+}
+
+  
+
+  /*==========================================
+       SERVICES SECTION STYLING GOES HERE
+===============================================*/ 
+
+section.service-container {
+  padding: 0;
+  margin: 0;
+  background: #FFFFFF;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /*header styles goes here*/
 header.section-header {
   text-align: center;
-  padding: 100px 20px 70px 20px;
+  padding: 120px 20px 70px 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("../images/service-background.png");
   position: relative;
   color: #E7F7F7;
+  height: 100vh;
 }
 
 header.section-header::before {
@@ -122,6 +895,11 @@ div p.statistics strong {
   color: #F6698B;
 }
 
+ul.navbar-nav {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 16px;
+}
 
 /* signature services styles goes here */
 section#signature-services {
@@ -413,10 +1191,17 @@ div a.contact i {
   .timeline-row::before {
     display: none;
   }
+ul.navbar-nav a {
+  color: #C3185B;
+  font-size:clamp(14px, 1.5vw, 18px);
+  font-weight: 600;
+}
 
-  h1.services-title::after {
+ul.navbar-nav a:hover {
+    color: #64BFBE;
+}
+
+h1.services-title::after {
     width: 60%;
   }
 }
-
-
