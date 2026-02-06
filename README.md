@@ -26,6 +26,7 @@ View Live Website -
 - Page Developers - Chimdinma Melikam [HOME PAGE]
 Asike Sandra [SERVICE PAGE]
 Precious Ado [CONTACT AND TEAM PAGE]
+Mubarokah Sijuola [ABOUT PAGE]
 
 
 ## ASIKE SANDRA - What I Learned
