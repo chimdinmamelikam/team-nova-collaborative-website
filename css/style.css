@@ -27,6 +27,9 @@ ul.navbar-nav a:hover {
 -------------------------------- */ 
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body#home-section {
@@ -831,7 +834,7 @@ header.section-header {
   background-image: url("../images/service-background.png");
   position: relative;
   color: #E7F7F7;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header.section-header::before {
@@ -1061,8 +1064,9 @@ section.how-it-works div.timeline-row::before {
   content: "";
   position: absolute;
   top: 30px;
-  left: 10%;
-  width: 80%;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
   height: 2px;
   background:linear-gradient(to right, 
   #64BFBE 0%,
