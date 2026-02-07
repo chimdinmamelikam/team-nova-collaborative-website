@@ -21,15 +21,15 @@ ul.navbar-nav a:hover {
     color: #64BFBE;
 }
 
+html, body {
+    overflow-x: hidden;
+}
 
 /* ------------------------------
    HOME PAGE GLOBAL STYLES
 -------------------------------- */ 
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 body#home-section {
@@ -1064,9 +1064,8 @@ section.how-it-works div.timeline-row::before {
   content: "";
   position: absolute;
   top: 30px;
-  left: 50%;
-  width: 90%;
-  transform: translateX(-50%);
+  left: 10%;
+  width: 80%;
   height: 2px;
   background:linear-gradient(to right, 
   #64BFBE 0%,
